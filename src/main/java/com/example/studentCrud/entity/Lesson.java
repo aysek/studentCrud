@@ -20,6 +20,9 @@ public class Lesson implements Serializable {
     @GeneratedValue
     private Long id;
 
+    @Column(length = 500,name = "adres")
+    private String lesson;
+
     @Column(length = 50,name = "dersAdi")
     private String dersAdi;
 
